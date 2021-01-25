@@ -4,29 +4,47 @@
   <head>
     <title>URL Shortener Microservice | freeCodeCamp.org</title>
     <link
-      rel="icon" 
-      type="image/png" 
+      rel="icon"
+      type="image/png"
       href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
     />
     <link href="/public/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <h1>URL Shortener Microservice</h1>
+    
     <main>
-      <section>
+      <div class="center">
+        <h1>URL Shortener Microservice</h1>
         <form action="api/shorturl/new" method="POST">
           <fieldset>
             <legend>URL Shortener</legend>
             <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
-            <input type="submit" value="POST URL" />
+            <input
+              id="url_input"
+              type="text"
+              name="url"
+              placeholder="https://www.freecodecamp.org/"
+            />
+            <input type="submit" value="POST URL" class="button1" />
           </fieldset>
         </form>
-      </section>
+      </div>
     </main>
     <footer>
-      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+      <p>
+        by
+        <a href="https://github.com/JoseRivera12">Jose Rivera</a>
+      </p>
+      <p>
+        Project APIs and Microservices Projects - File Metadata Microservice
+        <a href="https://www.freecodecamp.org/">freecodecamp</a>
+      </p>
     </footer>
   </body>
 </html>

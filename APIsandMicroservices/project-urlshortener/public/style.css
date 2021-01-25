@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #222;
   background-color: #fff;
@@ -8,15 +8,22 @@ body {
 }
 
 main {
-  padding: 0;
-  margin-top: 40px;
+  height: 500px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 h3 {
   margin-top: 30px;
 }
-
-
 
 .user-stories li {
   margin-bottom: 1em;
@@ -43,4 +50,14 @@ input {
 input[type='text'] {
   width: 220px;
   text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
