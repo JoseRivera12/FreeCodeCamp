@@ -16,8 +16,9 @@ h3 {
   margin-top: 30px;
 }
 
-.footer {
+footer{
 	margin-top: 40px;
+	font-weight: 600;
 }
 
 code {
@@ -28,5 +29,5 @@ code {
 }
 
 a {
-	color: #2574A9;
+	color: #16364b;
 }

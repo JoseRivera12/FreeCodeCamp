@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html')
 });
 
+//import routes
 app.use(require("./routes/user.routes"));
 app.use(require("./routes/exercise.routes"));
 

@@ -1,6 +1,7 @@
+require('dotenv').config()
+
 var express = require('express');
 var cors = require('cors');
-require('dotenv').config()
 var multer  = require('multer')
 var app = express();
 
@@ -13,6 +14,7 @@ app.get('/', function (req, res) {
 
 //use memoryStorage for just saves in memory for temporal access
 app.post('/api/fileanalyse', multer({storage: multer.memoryStorage()}).single('upfile'), function (req, res) {
+  //return info about the file
   res.json({name:req.file.originalname, type:req.file.mimetype, size:req.file.size})
 });
 

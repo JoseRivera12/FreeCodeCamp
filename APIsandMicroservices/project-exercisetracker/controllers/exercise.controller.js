@@ -23,6 +23,7 @@ exerciseCtrl.getLogs = (req, res) => {
     User.findById(request.query.userId, (error, result) => {
       if(!error){
         let responseObject = result
+        //check param from and to
         if(req.query.from || req.query.to){
           let fromDate = new Date(0)
           let toDate = new Date()
@@ -37,6 +38,7 @@ exerciseCtrl.getLogs = (req, res) => {
             return sessionDate >= fromDate && sessionDate <= toDate
           })
         }
+        //check param limit
         if(req.query.limit)
           responseObject.log = responseObject.log.slice(0, req.query.limit)
         responseObject = responseObject.toJSON()

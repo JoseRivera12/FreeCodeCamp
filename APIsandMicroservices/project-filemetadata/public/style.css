@@ -13,7 +13,8 @@ body {
   margin-top: 40px;
 }
 
-.footer {
+footer {
+  font-weight: 600;
   margin-top: 60px;
 }
 
